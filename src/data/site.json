@@ -1,0 +1,123 @@
+{
+  "name": "Pharmacie de la Liberté",
+  "tagline": "Votre santé, notre priorité au quotidien",
+  "subtitle": "Conseils personnalisés, services de proximité et accompagnement sur-mesure",
+  "siret": "{{SIRET}}",
+  "contact": {
+    "phone": "01 45 06 19 09",
+    "email": "pharmaciedelaliberte@gmail.com",
+    "emergency": "15"
+  },
+  "address": {
+    "street": "11 Rue de la Liberté",
+    "postalCode": "92150",
+    "city": "Suresnes",
+    "country": "France"
+  },
+  "hours": [
+    { "day": "Lundi", "openMorning": null, "closeMorning": null, "openAfternoon": "14:30", "closeAfternoon": "19:30", "closed": false },
+    { "day": "Mardi", "openMorning": "09:00", "closeMorning": "12:30", "openAfternoon": "14:30", "closeAfternoon": "19:30", "closed": false },
+    { "day": "Mercredi", "openMorning": "09:00", "closeMorning": "12:30", "openAfternoon": "15:00", "closeAfternoon": "19:30", "closed": false },
+    { "day": "Jeudi", "openMorning": "09:00", "closeMorning": "12:30", "openAfternoon": "14:30", "closeAfternoon": "19:30", "closed": false },
+    { "day": "Vendredi", "openMorning": "09:00", "closeMorning": "12:30", "openAfternoon": "14:30", "closeAfternoon": "19:30", "closed": false },
+    { "day": "Samedi", "openMorning": "09:00", "closeMorning": "12:30", "openAfternoon": "15:00", "closeAfternoon": "19:00", "closed": false },
+    { "day": "Dimanche", "openMorning": null, "closeMorning": null, "openAfternoon": null, "closeAfternoon": null, "closed": true }
+  ],
+  "services": [
+    {
+      "slug": "vaccination",
+      "title": "Vaccination",
+      "description": "Grippe, Covid-19, et autres vaccinations sur rendez-vous ou sans selon la période.",
+      "icon": "syringe",
+      "featured": true,
+      "details": "Nous proposons tous les vaccins recommandés : grippe saisonnière, Covid-19, hépatite B, papillomavirus, etc. Consultation préalable pour évaluer vos besoins."
+    },
+    {
+      "slug": "carte-vitale",
+      "title": "Carte Vitale acceptée",
+      "description": "Prise en charge Sécurité sociale et mutuelles pour vos médicaments.",
+      "icon": "clipboard-list",
+      "featured": true,
+      "details": "Nous acceptons la Carte Vitale pour tous vos médicaments remboursés par la Sécurité sociale. Remboursement automatique et tiers payant."
+    }
+  ],
+  "team": [
+    {
+      "name": "Nom à confirmer",
+      "role": "Pharmacien titulaire",
+      "specialty": "Pharmacie générale",
+      "experience": "15 ans d'expérience",
+      "image": "/team/pharmacist-1.jpg"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Marie L.",
+      "text": "Un service exceptionnel ! L'équipe est très professionnelle et prend le temps de bien conseiller. Je recommande vivement cette pharmacie.",
+      "rating": 5
+    },
+    {
+      "name": "Jean-Pierre M.",
+      "text": "Très satisfait des conseils reçus pour mon traitement. L'accueil est chaleureux et le personnel très compétent.",
+      "rating": 5
+    },
+    {
+      "name": "Sophie D.",
+      "text": "Service de vaccination rapide et efficace. L'équipe est rassurante et professionnelle. Merci pour votre dévouement !",
+      "rating": 5
+    },
+    {
+      "name": "Robert K.",
+      "text": "Excellente pharmacie de quartier. Le personnel est à l'écoute et les conseils sont toujours pertinents.",
+      "rating": 5
+    }
+  ],
+  "faq": [
+    {
+      "question": "Puis-je envoyer mon ordonnance en ligne ?",
+      "answer": "Oui, vous pouvez nous envoyer votre ordonnance par email ou via notre formulaire sécurisé. Nous vous rappellerons pour confirmer la disponibilité des médicaments et organiser la récupération."
+    },
+    {
+      "question": "Proposez-vous la vaccination sans rendez-vous ?",
+      "answer": "Cela dépend de la période et du type de vaccination. Pour la grippe saisonnière et certaines périodes, nous acceptons les vaccinations sans rendez-vous. Contactez-nous pour connaître les disponibilités."
+    },
+    {
+      "question": "Quels moyens de paiement sont acceptés ?",
+      "answer": "Nous acceptons les espèces, cartes bancaires, chèques, et le paiement par carte vitale pour les médicaments remboursés par la Sécurité sociale."
+    },
+    {
+      "question": "Faites-vous la livraison à domicile ?",
+      "answer": "Oui, nous proposons un service de livraison à domicile pour les personnes à mobilité réduite ou en cas de besoin particulier. Contactez-nous pour plus d'informations."
+    },
+    {
+      "question": "Quels sont vos horaires d'ouverture ?",
+      "answer": "Lundi : 14h30-19h30 | Mardi : 9h00-12h30 / 14h30-19h30 | Mercredi : 9h00-12h30 / 15h00-19h30 | Jeudi : 9h00-12h30 / 14h30-19h30 | Vendredi : 9h00-12h30 / 14h30-19h30 | Samedi : 9h00-12h30 / 15h00-19h00 | Dimanche : Fermé"
+    },
+    {
+      "question": "Comment prendre rendez-vous pour une consultation ?",
+      "answer": "Vous pouvez nous appeler directement ou utiliser notre système de prise de rendez-vous en ligne si disponible. Nous vous confirmerons le créneau par téléphone."
+    },
+    {
+      "question": "Acceptez-vous les ordonnances électroniques ?",
+      "answer": "Oui, nous acceptons les ordonnances électroniques (e-prescription) ainsi que les ordonnances papier traditionnelles."
+    }
+  ],
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "linkedin": null
+  },
+  "doctolib": "https://www.doctolib.fr/pharmacie/suresnes/pharmacie-pioger",
+  "map": "https://maps.google.com/?q=11+Rue+de+la+Liberté,+92150+Suresnes",
+  "emergency": {
+    "pharmacyGuard": "https://www.pharmaciesdegarde.com",
+    "emergencyNumber": "15",
+    "samu": "15",
+    "pompiers": "18"
+  },
+  "seo": {
+    "title": "{{PharmacyName}} - Votre santé, notre priorité au quotidien",
+    "description": "Pharmacie de quartier moderne - Services de santé, conseils personnalisés et accompagnement sur-mesure. Votre santé, notre priorité au quotidien.",
+    "keywords": "pharmacie, santé, médicaments, conseils, vaccination, tests, ordonnance, {{City}}"
+  }
+}

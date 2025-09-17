@@ -1,0 +1,339 @@
+@tailwind utilities;
+
+@layer utilities {
+  /* Spacing utilities */
+  .space-y-custom > * + * {
+    margin-top: 1.5rem;
+  }
+  
+  .space-y-custom-sm > * + * {
+    margin-top: 1rem;
+  }
+  
+  .space-y-custom-lg > * + * {
+    margin-top: 2rem;
+  }
+  
+  /* Layout utilities */
+  .min-h-screen-safe {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+  
+  .h-screen-safe {
+    height: 100vh;
+    height: 100dvh;
+  }
+  
+  /* Text utilities */
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Background utilities */
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, theme('colors.primary.500'), theme('colors.primary.600'));
+  }
+  
+  .bg-gradient-secondary {
+    background: linear-gradient(135deg, theme('colors.secondary.500'), theme('colors.secondary.600'));
+  }
+  
+  .bg-gradient-accent {
+    background: linear-gradient(135deg, theme('colors.accent.500'), theme('colors.accent.600'));
+  }
+  
+  .bg-gradient-hero {
+    background: linear-gradient(135deg, theme('colors.primary.500'), theme('colors.secondary.500'));
+  }
+  
+  /* Border utilities */
+  .border-gradient {
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, theme('colors.primary.500'), theme('colors.secondary.500')) border-box;
+  }
+  
+  /* Shadow utilities */
+  .shadow-custom {
+    box-shadow: 0 4px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  .shadow-custom-lg {
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.15), 0 20px 20px -10px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Transform utilities */
+  .transform-gpu {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  /* Backdrop utilities */
+  .backdrop-blur-custom {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+  /* Grid utilities */
+  .grid-pharmacy {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .grid-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+  
+  .grid-team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Flexbox utilities */
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .flex-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  /* Position utilities */
+  .absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .absolute-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .absolute-center-y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Z-index utilities */
+  .z-dropdown {
+    z-index: 1000;
+  }
+  
+  .z-sticky {
+    z-index: 1020;
+  }
+  
+  .z-fixed {
+    z-index: 1030;
+  }
+  
+  .z-modal-backdrop {
+    z-index: 1040;
+  }
+  
+  .z-modal {
+    z-index: 1050;
+  }
+  
+  .z-popover {
+    z-index: 1060;
+  }
+  
+  .z-tooltip {
+    z-index: 1070;
+  }
+  
+  /* Responsive utilities */
+  .container-responsive {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .container-responsive {
+      max-width: 640px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container-responsive {
+      max-width: 768px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container-responsive {
+      max-width: 1024px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .container-responsive {
+      max-width: 1280px;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .container-responsive {
+      max-width: 1536px;
+    }
+  }
+  
+  /* Animation utilities */
+  .animate-bounce-slow {
+    animation: bounce 2s infinite;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s infinite;
+  }
+  
+  .animate-spin-slow {
+    animation: spin 3s linear infinite;
+  }
+  
+  /* Hover utilities */
+  .hover-lift {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-2px);
+  }
+  
+  .hover-scale {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+  
+  .hover-glow {
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(19, 99, 223, 0.3);
+  }
+  
+  /* Focus utilities */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+  
+  .focus-ring-inset {
+    @apply focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500;
+  }
+  
+  /* Selection utilities */
+  .select-none {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .select-text {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
+  
+  .select-all {
+    -webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+  }
+  
+  /* Cursor utilities */
+  .cursor-grab {
+    cursor: grab;
+  }
+  
+  .cursor-grabbing {
+    cursor: grabbing;
+  }
+  
+  .cursor-zoom-in {
+    cursor: zoom-in;
+  }
+  
+  .cursor-zoom-out {
+    cursor: zoom-out;
+  }
+  
+  /* Overflow utilities */
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+  
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  .overflow-visible {
+    overflow: visible;
+  }
+  
+  /* Object fit utilities */
+  .object-cover {
+    object-fit: cover;
+  }
+  
+  .object-contain {
+    object-fit: contain;
+  }
+  
+  .object-fill {
+    object-fit: fill;
+  }
+  
+  .object-none {
+    object-fit: none;
+  }
+  
+  .object-scale-down {
+    object-fit: scale-down;
+  }
+}
